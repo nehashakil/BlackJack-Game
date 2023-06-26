@@ -1,0 +1,171 @@
+/* --------------------- GLOBAL : START ----------------------------- */
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+:root {
+  --primary-color: #B31312;
+  --secondary-color: #000;
+  --white: #fff;
+}
+
+*::-moz-selection {
+  color: var(--white);
+  background-color: var(--secondary-color);
+}
+
+*::selection {
+  color: var(--white);
+  background-color: var(--secondary-color);
+}
+
+html {
+  font-size: 62.6%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 8.012px;
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+body {
+  background: var(--white);
+}
+
+/* --------------------- GLOBAL : END ----------------------------- */
+
+/* --------------------- PAGE : START ----------------------------- */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(bg.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40.064px;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  padding: 40.064px 0;
+  padding: 4rem 0;
+}
+
+.logo {
+  width: 250.4px;
+  width: 25rem;
+}
+
+.text {
+  padding: 20.032px 0;
+  padding: 2rem 0;
+}
+
+h1 {
+  color: var(--primary-color);
+  padding-top: 50.08px;
+  padding-top: 5rem;
+  font-size: 40.064px;
+  font-size: 4rem;
+}
+h1 span {
+  color: var(--secondary-color);
+  padding-top: 50.08px;
+  padding-top: 5rem;
+  font-size: 40.064px;
+  font-size: 4rem;
+}
+
+p {
+  color: #000;
+  font-size: 22.035px;
+  font-size: 2.2rem;
+  padding-top: 20.032px;
+  padding-top: 2rem;
+}
+
+.btn {
+  border: none;
+  color: var(--white);
+  font-size: 16.025px;
+  font-size: 1.6rem;
+  padding: 10.016px 14.022px;
+  padding: 1rem 1.4rem;
+  margin: 8.012px;
+  margin: 0.8rem;
+  margin-top: 30.048px;
+  margin-top: 3rem;
+  border-radius: 6px;
+}
+
+#startBtn {
+  background: var(--primary-color);
+}
+
+#ncard {
+  background: var(--secondary-color);
+}
+
+#startBtn:hover {
+  background: var(--secondary-color);
+  color: var(--white);
+}
+
+#ncard:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+/* --------------------- PAGE : END ----------------------------- */
+
+/* --------------------- RESPONSIVE : START --------------------- */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media(max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* --------------------- RESPONSIVEPAGE : END -------------------- */
